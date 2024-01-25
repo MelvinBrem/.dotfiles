@@ -1,0 +1,94 @@
+#!/usr/bin/env zsh
+
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Disable the over-the-top focus ring animation
+defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
+
+# Disable Resume system-wide
+defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+
+# Save screenshots to custom folder
+defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screenshots"
+
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
+
+# Disable shadow in screenshots
+defaults write com.apple.screencapture disable-shadow -bool true
+
+# Stop iTunes from responding to the keyboard media keys
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+
+# Show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Show invisible files
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# Search the current directory by default when searching
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# List view by defauilt
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+# Finder: disable window animations and Get Info animations
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
+
+# Remove the animation when hiding/showing the Dock 
+defaults write com.apple.dock autohide-time-modifier -float 0
+
+# Disable animation when opening files
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+
+# Visualize CPU usage in the Activity Monitor Dock icon
+defaults write com.apple.ActivityMonitor IconType -int 5
+
+# Show all processes in Activity Monitor
+defaults write com.apple.ActivityMonitor ShowCategory -int 0
+
+ # Sort Activity Monitor results by CPU usage
+defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
+defaults write com.apple.ActivityMonitor SortDirection -int 0
+
+# Disable warning when changing extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# show files with all extensions
+defaults write -g AppleShowAllExtensions -bool true
+
+# Show the ~/Library folder
+chflags nohidden $HOME/Library
+
+# Show the /Volumes folder
+sudo chflags nohidden /Volumes
+
+# Dark menu bar and dock
+defaults write $HOME/Library/Preferences/.GlobalPreferences.plist AppleInterfaceTheme -string "Dark"
+
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
+
+# Kill affected things
+for app in "Activity Monitor" \
+	"cfprefsd" \
+	"Contacts" \
+	"Dock" \
+    "Finder" \
+    "Messages" \
+	"SystemUIServer" \
+	"Terminal"; do
+	killall "${app}" &> /dev/null
+done

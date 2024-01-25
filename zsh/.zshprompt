@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+autoload -U colors && colors
+
+# TERMINAL
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+PS1="%{$fg_no_bold[green]%}%~ %{$fg[blue]%}>> %{$reset_color%}"
+export PS1;
