@@ -2,8 +2,18 @@
 
 # === Global ===
 
+alias ls='ls -a'
+alias rmfr='rm -fr'
+
+alias \.\.='cd ..'
+
+alias lcl='cd ~/Local\ sites/'
+alias dsk='cd ~/Desktop/'
+alias dl='cd ~/Downloads/'
+
 alias code='code .'
 alias open='open .'
-alias composer='composer install'
+
 alias re='clear; exec zsh -l'
+alias hosts='sudo nano /etc/hosts'
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
