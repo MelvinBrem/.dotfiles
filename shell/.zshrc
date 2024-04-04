@@ -10,6 +10,12 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 
 source $HOME/.zshenv
+source $HOME/.precmd
 source $HOME/.zshprompt
 source $HOME/.aliases
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+for script in $HOME/.dotfiles/scripts/*.sh; do
+    source $script;
+done;

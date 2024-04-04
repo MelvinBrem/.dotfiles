@@ -3,25 +3,32 @@
 # === Global ===
 
 alias ls='ls -a'
-alias rmfr='rm -fr'
-
 alias \.\.='cd ..'
 
 alias lcl='cd ~/Local\ sites/'
 alias dsk='cd ~/Desktop/'
 alias dl='cd ~/Downloads/'
-alias dfls='cd ~/.dotfiles/'
+alias df='cd ~/.dotfiles/'
+alias cdlf='lfcd'
+
 
 alias code='code .'
 alias open='open .'
 alias nano='sudo nano'
 
-alias c='composer'
-alias cin='composer install'
-alias cup='composer upgrade'
-alias crm='composer remove'
-
 alias re='clear; exec zsh -l'
 alias hosts='sudo nano /etc/hosts'
 alias fdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
-alias dnsf='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+alias dnsf='fdns'
+
+# === Git ===
+
+alias lg='lazygit'
+alias gp='git pull'
+
+# === Composer ===
+
+alias cin='composer install'
+alias cup='composer upgrade'
+alias crm='composer remove'
+alias cre='composer require'

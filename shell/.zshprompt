@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+autoload -U colors && colors
+setopt PROMPT_SUBST
+
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ %F{yellow}[%F{cyan}\1%F{yellow}]/'
+}
+
+export PS1="%F{green}%~%F{red}\$(parse_git_branch)%{%F{yellow}%} >> %F{green}"
