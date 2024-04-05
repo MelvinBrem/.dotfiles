@@ -1,13 +1,21 @@
 #!/usr/bin/env zsh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
+
+# === FNM ===
+export PATH="$HOME/Library/Caches/fnm_multishells/29648_1712237561997/bin":$PATH
+export FNM_COREPACK_ENABLED="false"
+export FNM_DIR="$HOME/Library/Application Support/fnm"
+export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
+export FNM_VERSION_FILE_STRATEGY="local"
+export FNM_RESOLVE_ENGINES="false"
+export FNM_ARCH="x64"
+export FNM_MULTISHELL_PATH="$HOME/Library/Caches/fnm_multishells/29648_1712237561997"
+export FNM_LOGLEVEL="info"
+rehash
 
 source $HOME/.zshenv
 source $HOME/.precmd
