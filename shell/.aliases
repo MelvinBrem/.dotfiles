@@ -32,3 +32,8 @@ alias cin='composer install'
 alias cup='composer upgrade'
 alias crm='composer remove'
 alias cre='composer require'
+
+# === Other ===
+
+alias yb='yarn build'
+alias yd='yarn dev'
