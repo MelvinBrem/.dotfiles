@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+skip_global_compinit=1
+
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
@@ -17,8 +19,9 @@ export FNM_MULTISHELL_PATH="$HOME/Library/Caches/fnm_multishells/29648_171223756
 export FNM_LOGLEVEL="info"
 rehash
 
-source $HOME/.zshenv
-source $HOME/.precmd
+source $HOME/.dotfiles/scripts/inc/variables.sh
+source $HOME/.dotfiles/scripts/inc/helpers.sh
+
 source $HOME/.zshprompt
 source $HOME/.aliases
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh

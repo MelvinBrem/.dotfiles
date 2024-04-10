@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 # === Global ===
 
 alias ls='ls -a'
@@ -10,7 +8,6 @@ alias dsk='cd ~/Desktop/'
 alias dl='cd ~/Downloads/'
 alias df='cd ~/.dotfiles/'
 alias cdlf='lfcd'
-
 
 alias code='code .'
 alias open='open .'
@@ -33,7 +30,21 @@ alias cup='composer upgrade'
 alias crm='composer remove'
 alias cre='composer require'
 
-# === Other ===
+# === Laravel ===
+
+alias pa='php artisan'
+alias pam='php artisan migrate'
+alias pamr='php artisan migrate:rollback'
+alias par='php artisan migrate:refresh'
+
+# === Yarn ===
 
 alias yb='yarn build'
 alias yd='yarn dev'
+
+# === Other ===
+
+alias setalias='nano ~/.dotfiles/shell/.aliases'
+alias setsshhosts='nano ~/.ssh/config'
+alias getsshhosts="grep -E '^Host ' ~/.ssh/config | awk '{print $2}'"
+alias getsshkey='cat ~/.ssh/id_ed25519.pub'
