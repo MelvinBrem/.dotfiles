@@ -22,6 +22,9 @@ alias dnsf='fdns'
 
 alias lg='lazygit'
 alias gp='git pull'
+alias gf='git fetch'
+alias gpom='git pull origin master'
+alias gpod='git pull origin develop'
 
 # === Composer ===
 
@@ -36,6 +39,7 @@ alias pa='php artisan'
 alias pam='php artisan migrate'
 alias pamr='php artisan migrate:rollback'
 alias par='php artisan migrate:refresh'
+alias pas='php artisan serve'
 
 # === Yarn ===
 
@@ -44,7 +48,8 @@ alias yd='yarn dev'
 
 # === Other ===
 
-alias setalias='nano ~/.dotfiles/shell/.aliases'
-alias setsshhosts='nano ~/.ssh/config'
-alias getsshhosts="grep -E '^Host ' ~/.ssh/config | awk '{print $2}'"
-alias getsshkey='cat ~/.ssh/id_ed25519.pub'
+alias nrd='npm run dev'
+alias set_alias='nano ~/.dotfiles/shell/.aliases'
+alias set_sshhosts='nano ~/.ssh/config'
+alias get_sshhosts="grep -E '^Host ' ~/.ssh/config | awk '{print $2}'"
+alias get_sshkey='pbcopy <~/.ssh/id_ed25519.pub && echo "Copied id_ed25519.pub to clipboard"'
