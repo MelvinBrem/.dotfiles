@@ -18,7 +18,7 @@ lwp () {
         "create-user")
             wp user delete melvinbrem@socialbrothers.nl --network
             wp user create localadmin melvinbrem@socialbrothers.nl --user_pass="root" --role="administrator"
-            wp user super-admin add localadmin
+            wp super-admin add localadmin
         ;;
         "init")
             lwp install-plugins
