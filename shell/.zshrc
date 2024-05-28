@@ -19,14 +19,16 @@ export FNM_MULTISHELL_PATH="$HOME/Library/Caches/fnm_multishells/29648_171223756
 export FNM_LOGLEVEL="info"
 rehash
 
-source $HOME/.dotfiles/scripts/inc/variables.sh
-source $HOME/.dotfiles/scripts/inc/helpers.sh
+export NODE_ENV=development
+
+source $HOME/.dotfiles/shell/inc/variables.sh
+source $HOME/.dotfiles/shell/inc/helpers.sh
+source $HOME/.dotfiles/shell/inc/lfcd.sh
+
+source $HOME/.dotfiles/shell/lwp/lwpController.sh
 
 source $HOME/.zshprompt
 source $HOME/.aliases
+
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-for script in $HOME/.dotfiles/scripts/*.sh; do
-    source $script;
-done;

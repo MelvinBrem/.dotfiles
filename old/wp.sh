@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
-# A nasty little thing to create local wp installs, please dont use, not very proud of this
 
 COLOR_DEFAULT_TEXT="\033[0;39m"
 COLOR_RED="\033[0;91m"

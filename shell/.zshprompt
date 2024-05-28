@@ -6,7 +6,7 @@ setopt PROMPT_SUBST
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-parse_git_branch() {
+function parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ %F{yellow}[%F{cyan}\1%F{yellow}]/'
 }
 
