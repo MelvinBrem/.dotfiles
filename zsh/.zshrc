@@ -21,11 +21,11 @@ rehash
 
 export NODE_ENV=development
 
-source $HOME/.dotfiles/shell/inc/variables.sh
-source $HOME/.dotfiles/shell/inc/helpers.sh
-source $HOME/.dotfiles/shell/inc/lfcd.sh
+source $HOME/.dotfiles/zsh/inc/variables.sh
+source $HOME/.dotfiles/zsh/inc/helpers.sh
+source $HOME/.dotfiles/zsh/inc/lfcd.sh
 
-source $HOME/.dotfiles/shell/lwp/lwpController.sh
+source $HOME/.dotfiles/zsh/lwp/lwpController.sh
 
 source $HOME/.zshprompt
 source $HOME/.aliases
