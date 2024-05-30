@@ -3,7 +3,7 @@
 alias ls="ls -a"
 alias \.\.="cd .."
 
-alias lcl="cd ~/Local\ sites/"
+alias lcl="cd ~/sites-localwp/"
 alias dsk="cd ~/Desktop/"
 alias dl="cd ~/Downloads/"
 alias df="cd ~/.dotfiles/"

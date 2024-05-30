@@ -1,14 +1,14 @@
 {
   "Badge Text" : "",
-  "Thin Strokes" : 4,
+  "Custom Directory" : "No",
   "Working Directory" : "\/Users\/melvinbrem",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
-    "Red Component" : 0.070588235294117646,
+    "Red Component" : 0.070588238537311554,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.070588235294117646,
+    "Blue Component" : 0.070588238537311554,
     "Alpha Component" : 1,
-    "Green Component" : 0.070588235294117646
+    "Green Component" : 0.070588238537311554
   },
   "Rows" : 30,
   "Ansi 11 Color" : {
@@ -88,11 +88,11 @@
   "Shortcut" : "",
   "Background Image Location" : "\/Users\/melvinbrem\/.dotfiles\/assets\/LM_G.png",
   "Bold Color" : {
-    "Red Component" : 0.66274509803921566,
+    "Red Component" : 0.66274511814117432,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.46274509803921571,
+    "Blue Component" : 0.46274510025978088,
     "Alpha Component" : 1,
-    "Green Component" : 0.86274509803921573
+    "Green Component" : 0.86274510622024536
   },
   "Use Cursor Guide" : false,
   "Custom Window Title" : "",
@@ -367,9 +367,9 @@
   "Ansi 9 Color" : {
     "Red Component" : 0.73620748519897461,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.31638336046922205,
+    "Blue Component" : 0.31638336181640625,
     "Alpha Component" : 1,
-    "Green Component" : 0.25127534568582632
+    "Green Component" : 0.25127536058425903
   },
   "Use Bold Font" : true,
   "Silence Bell" : false,
@@ -384,7 +384,7 @@
   "Use Bright Bold" : true,
   "Cursor Text Color" : {
     "Red Component" : 0.070588235294117646,
-    "Color Space" : "sRGB",
+    "Color Space" : "P3",
     "Blue Component" : 0.070588235294117646,
     "Alpha Component" : 1,
     "Green Component" : 0.070588235294117646
@@ -407,6 +407,13 @@
   "Name" : "Custom",
   "Blinking Cursor" : true,
   "Guid" : "3961D819-5296-4DE4-B53F-79532A2DB316",
+  "Match Background Color" : {
+    "Red Component" : 1,
+    "Color Space" : "P3",
+    "Blue Component" : 0,
+    "Alpha Component" : 1,
+    "Green Component" : 1
+  },
   "Idle Code" : 0,
   "Ansi 10 Color" : {
     "Red Component" : 0.41764539480209351,
@@ -434,15 +441,15 @@
   "Blur Radius" : 19.529754638671875,
   "Background Image Mode" : 2,
   "Ansi 0 Color" : {
-    "Red Component" : 0,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0,
+    "Red Component" : 0.070588235294117646,
+    "Color Space" : "P3",
+    "Blue Component" : 0.070588235294117646,
     "Alpha Component" : 1,
-    "Green Component" : 0
+    "Green Component" : 0.070588235294117646
   },
   "Blur" : false,
-  "Normal Font" : "JetBrainsMono-Regular 13",
   "Vertical Spacing" : 1,
+  "Normal Font" : "Menlo-Regular 11",
   "Ansi 7 Color" : {
     "Red Component" : 0.98823529481887817,
     "Color Space" : "sRGB",
@@ -479,13 +486,13 @@
     "Alpha Component" : 1,
     "Green Component" : 0.89562714099884033
   },
-  "Transparency" : 0.14999999999999999,
+  "Transparency" : 0,
   "Background Color" : {
-    "Red Component" : 0,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0,
+    "Red Component" : 0.070588235294117646,
+    "Color Space" : "P3",
+    "Blue Component" : 0.070588235294117646,
     "Alpha Component" : 1,
-    "Green Component" : 0
+    "Green Component" : 0.070588235294117646
   },
   "Screen" : -1,
   "Initial Use Transparency" : false,
@@ -503,13 +510,13 @@
   "Use Tab Color" : false,
   "Columns" : 100,
   "Visual Bell" : true,
-  "Custom Directory" : "No",
+  "ASCII Ligatures" : false,
+  "Thin Strokes" : 4,
   "Ansi 5 Color" : {
     "Red Component" : 0.67058825492858887,
     "Color Space" : "sRGB",
     "Blue Component" : 0.94901961088180542,
     "Alpha Component" : 1,
     "Green Component" : 0.61568629741668701
-  },
-  "ASCII Ligatures" : false
+  }
 }
