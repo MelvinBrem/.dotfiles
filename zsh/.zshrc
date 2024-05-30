@@ -21,14 +21,14 @@ rehash
 
 export NODE_ENV=development
 
-source $HOME/.dotfiles/zsh/inc/variables.sh
-source $HOME/.dotfiles/zsh/inc/helpers.sh
-source $HOME/.dotfiles/zsh/inc/lfcd.sh
+source $HOME/.zsh/inc/variables.sh
+source $HOME/.zsh/inc/helpers.sh
+source $HOME/.zsh/inc/lfcd.sh
 
-source $HOME/.dotfiles/zsh/lwp/lwpController.sh
+source $HOME/.zsh/lwp/lwpController.sh
 
-source $HOME/.zshprompt
-source $HOME/.aliases
+source $HOME/.zsh/.zshprompt
+source $HOME/.zsh/.aliases
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

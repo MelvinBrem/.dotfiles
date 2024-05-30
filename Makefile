@@ -1,13 +1,18 @@
 #!/usr/bin/env zsh
 
 all:
-	@stow --verbose --restow */
+	@stow --verbose --delete */
+	@stow --verbose --restow --adopt git
+	@stow --verbose --restow --adopt zsh
 
 delete:
 	@stow --verbose --delete */
 
-init:
-	@stow --verbose --adopt */
+# === Setup ===
 
 brew:
 	@cd ~/.dotfiles/homebrew && brew bundle dump -f
+
+setup:
+	@cd ~/.dotfiles/macos && sh .macos
+	@cd ~/.dotfiles/homebrew && brew bundle Brewfile

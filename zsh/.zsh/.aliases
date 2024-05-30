@@ -17,7 +17,7 @@ alias re="clear; exec zsh -l"
 alias fdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias dnsf="fdns"
 
-alias set_alias="nano ~/.dotfiles/zsh/.aliases"
+alias set_alias="nano ~/.dotfiles/zsh/.zsh/.aliases"
 alias set_hosts="nano /etc/hosts"
 alias set_sshhosts="nano ~/.ssh/config"
 alias get_sshhosts="grep -E '^Host' ~/.ssh/config | awk '{print $2}'"

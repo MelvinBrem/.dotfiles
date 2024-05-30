@@ -1,6 +1,6 @@
 {
   "Badge Text" : "",
-  "Custom Directory" : "No",
+  "Custom Directory" : "Recycle",
   "Working Directory" : "\/Users\/melvinbrem",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
@@ -440,6 +440,7 @@
   "Ambiguous Double Width" : false,
   "Blur Radius" : 19.529754638671875,
   "Background Image Mode" : 2,
+  "Cursor Type" : 2,
   "Ansi 0 Color" : {
     "Red Component" : 0.070588235294117646,
     "Color Space" : "P3",
@@ -448,8 +449,8 @@
     "Green Component" : 0.070588235294117646
   },
   "Blur" : false,
-  "Vertical Spacing" : 1,
-  "Normal Font" : "Menlo-Regular 11",
+  "Normal Font" : "FragmentMono-Regular 13",
+  "Vertical Spacing" : 1.1000000000000001,
   "Ansi 7 Color" : {
     "Red Component" : 0.98823529481887817,
     "Color Space" : "sRGB",
