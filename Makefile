@@ -8,3 +8,6 @@ delete:
 
 init:
 	@stow --verbose --adopt */
+
+brew:
+	@cd ~/.dotfiles/homebrew && brew bundle dump -f
