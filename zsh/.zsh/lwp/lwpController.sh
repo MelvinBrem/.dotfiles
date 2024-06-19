@@ -21,7 +21,7 @@ function lwp() {
         ;;
     "create-user")
         wp user delete melvinbrem@socialbrothers.nl --network
-        wp user create ${LWP_DEFAULT_USERNAME} ${LWP_DEFAULT_EMAIL} --user_pass="${LWP_DEFAULT_PASSWORD}" --role="administrator" --skip-email
+        wp user create ${LWP_DEFAULT_USERNAME} ${LWP_DEFAULT_EMAIL} --user_pass="${LWP_DEFAULT_PASSWORD}" --role="administrator"
         wp super-admin add admin
         ;;
     "init")

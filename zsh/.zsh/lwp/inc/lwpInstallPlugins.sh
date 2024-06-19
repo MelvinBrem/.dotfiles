@@ -4,7 +4,7 @@ function lwp_install_plugins() {
     plugins=(
         'https://downloads.wordpress.org/plugin/disable-emails.latest-stable.zip'
         'https://downloads.wordpress.org/plugin/pexlechris-adminer-stable.zip'
-        '/Users/melvinbrem/Desktop/Plugins/wp-migrate-db-pro-2.6.12.zip'
+        '/Users/melvinbrem/Desktop/Plugins/wp-migrate-db-pro-2.6.13.zip'
     )
 
     for plugin in $plugins; do
