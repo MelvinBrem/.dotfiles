@@ -22,6 +22,7 @@ alias set_hosts="nano /etc/hosts"
 alias set_sshhosts="nano ~/.ssh/config"
 alias get_sshhosts="grep -E '^Host' ~/.ssh/config | awk '{print $2}'"
 alias get_sshkey="pbcopy <~/.ssh/id_ed25519.pub && echo 'Copied id_ed25519.pub to clipboard'"
+alias get_myip="dig +short myip.opendns.com @resolver1.opendns.com | pbcopy && echo 'Copied IP to clipboard'"
 
 # === Git ===
 
