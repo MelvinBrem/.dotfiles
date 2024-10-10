@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source ${funcsourcetrace[1]%/*}/inc/lwpVariables.sh
+source ${funcsourcetrace[1]%/*}/inc/lwpEnv.sh
 source ${funcsourcetrace[1]%/*}/inc/lwpDeleteSite.sh
 source ${funcsourcetrace[1]%/*}/inc/lwpCreateSite.sh
 source ${funcsourcetrace[1]%/*}/inc/lwpInstallPlugins.sh
@@ -20,7 +20,7 @@ function lwp() {
         lwp_install_plugins
         ;;
     "create-user")
-        wp user delete melvinbrem@socialbrothers.nl --network
+        yes | wp user delete melvinbrem@socialbrothers.nl --network
         wp user create ${LWP_DEFAULT_USERNAME} ${LWP_DEFAULT_EMAIL} --user_pass="${LWP_DEFAULT_PASSWORD}" --role="administrator"
         wp super-admin add admin
         ;;
