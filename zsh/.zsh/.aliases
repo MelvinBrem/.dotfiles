@@ -29,8 +29,9 @@ alias get_myip="dig +short myip.opendns.com @resolver1.opendns.com | pbcopy && e
 alias lg="lazygit"
 alias gp="git pull"
 alias gf="git fetch"
-alias gpom="git pull origin master"
-alias gpod="git pull origin develop"
+alias gpmaster="git pull origin master"
+alias gpmain="git pull origin main"
+alias gpdev="git pull origin develop"
 
 # === Composer ===
 
@@ -38,6 +39,7 @@ alias cin="composer install"
 alias cup="composer upgrade"
 alias crm="composer remove"
 alias cre="composer require"
+alias cda="composer dump-autoload"
 
 # === Laravel ===
 
@@ -50,5 +52,7 @@ alias pas="php artisan serve"
 # === NPM/Yarn ===
 
 alias nrd="npm run dev"
+alias y="yarn"
 alias yb="yarn build"
 alias yd="yarn dev"
+alias yup="yarn upgrade"
