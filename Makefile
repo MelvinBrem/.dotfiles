@@ -4,6 +4,7 @@ all:
 	@stow --verbose --delete */
 	@stow --verbose --restow --adopt git
 	@stow --verbose --restow --adopt zsh
+	@ln -s ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 delete:
 	@stow --verbose --delete */

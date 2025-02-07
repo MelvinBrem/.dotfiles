@@ -1,6 +1,6 @@
 # === Global ===
 
-alias ls="ls -a"
+alias ls="gls --group-directories-first --color=auto -ah1"
 alias \.\.="cd .."
 
 alias lcl="cd ~/sites-localwp/"
@@ -32,6 +32,8 @@ alias gf="git fetch"
 alias gpmaster="git pull origin master"
 alias gpmain="git pull origin main"
 alias gpdev="git pull origin develop"
+alias cp="gh copilot"
+alias gcp="git cherry-pick"
 
 # === Composer ===
 
