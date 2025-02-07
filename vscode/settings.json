@@ -48,6 +48,7 @@
   "php.suggest.basic": false,
   "intelephense.completion.maxItems": 50,
   "prettier.printWidth": 120,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "php.validate.executablePath": "/opt/homebrew/opt/php"
   }
   
