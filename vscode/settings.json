@@ -1,54 +1,53 @@
 {
-    "workbench.iconTheme": "Monokai Pro Icons",
-    "workbench.startupEditor": "none",
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
-    "editor.formatOnSave": true,
-    "[scss]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "markdown.preview.fontSize": 12,
-    "explorer.confirmDelete": false,
-    "files.associations": {
-      ".deployignore": "ignore",
-      "*.php": "php"
-    },
-    "git.suggestSmartCommit": false,
-    "workbench.colorTheme": "Monokai Pro",
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "git.ignoreRebaseWarning": true,
-    "extensions.ignoreRecommendations": true,
-    "explorer.confirmDragAndDrop": false,
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[less]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "security.promptForLocalFileProtocolHandling": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "phpunit.colors": "",
-    "phpunit.args": [],
-    "git.openRepositoryInParentFolders": "never",
-    "terminal.integrated.fontSize": 13,
-    "window.zoomLevel": 1,
-    "scm.inputFontSize": 12,
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.startupEditor": "none",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "editor.formatOnSave": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "markdown.preview.fontSize": 12,
+  "explorer.confirmDelete": false,
+  "files.associations": {
+    ".deployignore": "ignore",
+    "*.php": "php"
+  },
+  "git.suggestSmartCommit": false,
+  "workbench.colorTheme": "Monokai Pro",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.ignoreRebaseWarning": true,
+  "extensions.ignoreRecommendations": true,
+  "explorer.confirmDragAndDrop": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.promptForLocalFileProtocolHandling": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "phpunit.colors": "",
+  "phpunit.args": [],
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.fontSize": 13,
+  "window.zoomLevel": 1,
+  "scm.inputFontSize": 12,
   "php.suggest.basic": false,
   "intelephense.completion.maxItems": 50,
   "prettier.printWidth": 120,
   "security.workspace.trust.untrustedFiles": "open",
   "php.validate.executablePath": "/opt/homebrew/opt/php"
-  }
-  
+}
