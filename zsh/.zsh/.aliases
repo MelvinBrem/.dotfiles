@@ -29,18 +29,21 @@ alias get_myip="dig +short myip.opendns.com @resolver1.opendns.com | pbcopy && e
 alias lg="lazygit"
 alias gp="git pull"
 alias gf="git fetch"
-alias gpmaster="git pull origin master"
-alias gpmain="git pull origin main"
-alias gpdev="git pull origin develop"
-alias cp="gh copilot"
+alias gcom="git fetch origin && git checkout origin $(git ls-remote --exit-code --heads origin master && echo master || echo main)"
+alias gcod="git fetch origin && git checkout origin develop"
+alias gpm="git fetch origin && git pull origin $(git ls-remote --exit-code --heads origin master && echo master || echo main)"
+alias gcod="git fetch origin && git pull origin develop"
 alias gcp="git cherry-pick"
 
 # === Composer ===
 
 alias cin="composer install"
+alias crs="composer run-script"
+alias ct="composer run-script test"
 alias cup="composer upgrade"
 alias crm="composer remove"
 alias cre="composer require"
+alias cgre="composer global require"
 alias cda="composer dump-autoload"
 
 # === Laravel ===
@@ -58,3 +61,4 @@ alias y="yarn"
 alias yb="yarn build"
 alias yd="yarn dev"
 alias yup="yarn upgrade"
+alias yin="yarn install"
