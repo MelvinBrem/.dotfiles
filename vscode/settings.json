@@ -1,30 +1,31 @@
 {
+  // Workbench settings
   "workbench.iconTheme": "Monokai Pro Icons",
   "workbench.startupEditor": "none",
+
+  // Git settings
   "git.autofetch": true,
   "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+  "git.ignoreRebaseWarning": true,
+  "git.openRepositoryInParentFolders": "never",
+
+  // Editor settings
   "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
   "editor.formatOnSave": true,
+  "editor.hover.delay": 200,
+  "editor.hover.hidingDelay": 200,
+
+  // Language specific formatter settings
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "markdown.preview.fontSize": 12,
-  "explorer.confirmDelete": false,
-  "files.associations": {
-    ".deployignore": "ignore",
-    "*.php": "php"
-  },
-  "git.suggestSmartCommit": false,
-  "workbench.colorTheme": "Monokai Pro",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "git.ignoreRebaseWarning": true,
-  "extensions.ignoreRecommendations": true,
-  "explorer.confirmDragAndDrop": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -37,17 +38,134 @@
   "[less]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "security.promptForLocalFileProtocolHandling": false,
-  "diffEditor.ignoreTrimWhitespace": false,
+
+  // Markdown settings
+  "markdown.preview.fontSize": 12,
+
+  // Explorer settings
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // File associations
+  "files.associations": {
+    ".deployignore": "ignore",
+    "*.php": "php",
+    "*.module": "php"
+  },
+
+  // Extensions settings
+  "extensions.ignoreRecommendations": true,
+
+  // Terminal settings
+  "terminal.integrated.fontSize": 13,
+
+  // Window settings
+  "window.zoomLevel": 1,
+
+  // SCM settings
+  "scm.inputFontSize": 12,
+
+  // PHP settings
+  "php.suggest.basic": true,
+  "php.validate.executablePath": "/opt/homebrew/opt/php",
   "phpunit.colors": "",
   "phpunit.args": [],
-  "git.openRepositoryInParentFolders": "never",
-  "terminal.integrated.fontSize": 13,
-  "window.zoomLevel": 1,
-  "scm.inputFontSize": 12,
-  "php.suggest.basic": false,
+
+  // Intelephense settings
   "intelephense.completion.maxItems": 50,
+  "intelephense.files.maxSize": 5000000,
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mcrypt",
+    "mysql",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pdo_ibm",
+    "pdo_mysql",
+    "pdo_pgsql",
+    "pdo_sqlite",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "wordpress"
+  ],
+
+  // Prettier settings
   "prettier.printWidth": 120,
+
+  // Security settings
+  "security.promptForLocalFileProtocolHandling": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "php.validate.executablePath": "/opt/homebrew/opt/php"
+
+  // Diff editor settings
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.saveConflictResolution": "overwriteFileOnDisk",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "phpstan.binPath": "vendor/bin/phpstan",
+  "phpstan.binPath": "~/.composer/vendor/bin/phpstan",
+  // "phpstan.configFile": "${workspaceFolder}/phpstan.neon,${workspaceFolder}/phpstan.neon.dist,${workspaceFolder}/phpstan.dist.neon",
+  "workbench.colorTheme": "Monokai Pro"
 }

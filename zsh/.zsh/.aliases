@@ -32,7 +32,7 @@ alias gf="git fetch"
 alias gcom="git fetch origin && git checkout origin $(git ls-remote --exit-code --heads origin master && echo master || echo main)"
 alias gcod="git fetch origin && git checkout origin develop"
 alias gpm="git fetch origin && git pull origin $(git ls-remote --exit-code --heads origin master && echo master || echo main)"
-alias gcod="git fetch origin && git pull origin develop"
+alias gpd="git fetch origin && git pull origin develop"
 alias gcp="git cherry-pick"
 
 # === Composer ===
