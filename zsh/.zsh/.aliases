@@ -17,6 +17,8 @@ alias re="clear; exec zsh -l"
 alias fdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias dnsf="fdns"
 
+alias calc="bc"
+
 alias set_alias="nano ~/.dotfiles/zsh/.zsh/.aliases"
 alias set_hosts="nano /etc/hosts"
 alias set_sshhosts="nano ~/.ssh/config"
@@ -29,10 +31,6 @@ alias get_myip="dig +short myip.opendns.com @resolver1.opendns.com | pbcopy && e
 alias lg="lazygit"
 alias gp="git pull"
 alias gf="git fetch"
-alias gcom="git fetch origin && git checkout origin $(git ls-remote --exit-code --heads origin master && echo master || echo main)"
-alias gcod="git fetch origin && git checkout origin develop"
-alias gpm="git fetch origin && git pull origin $(git ls-remote --exit-code --heads origin master && echo master || echo main)"
-alias gpd="git fetch origin && git pull origin develop"
 alias gcp="git cherry-pick"
 
 # === Composer ===
@@ -62,3 +60,5 @@ alias yb="yarn build"
 alias yd="yarn dev"
 alias yup="yarn upgrade"
 alias yin="yarn install"
+
+alias python="python2"

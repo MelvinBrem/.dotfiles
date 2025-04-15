@@ -7,7 +7,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 function parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ %F{yellow}[%F{cyan}\1%F{yellow}]/'
+     git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ %F{yellow}[%F{cyan}\1%F{yellow}]/'
 }
 
 export PS1="%F{green}%~%F{red}\$(parse_git_branch)%{%F{yellow}%} >> %F{green}"
