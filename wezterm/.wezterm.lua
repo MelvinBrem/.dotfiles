@@ -5,11 +5,14 @@ config.automatically_reload_config = true
 config.initial_cols = 140
 config.initial_rows = 40
 
-config.font =   wezterm.font('JetBrains Mono', {
+config.font = wezterm.font('JetBrains Mono', {
   weight = 'Bold',
 })
+config.line_height = 1.1
+-- https://github.com/stayradiated/terminal.sexy
 config.color_scheme = "Monokai (terminal.sexy)"
 config.colors ={
+  foreground = "#8FC029",
   background = '#121212',
 }
 config.background = {
@@ -24,7 +27,7 @@ config.background = {
   },
   {
     source = {
-      File = '/Users/melvinbrem/.dotfiles/assets/LM_G.png',
+      File = '/Users/melvinbrem/.dotfiles/assets/LM_NG.png',
     },
     height = 'Contain',
     horizontal_align = 'Center',
@@ -32,7 +35,7 @@ config.background = {
     width = 'Contain',
     repeat_x = 'NoRepeat',
     repeat_y = 'NoRepeat',
-    opacity = 0.2,
+    opacity = 0.1,
   }
 }
 

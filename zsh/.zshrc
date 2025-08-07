@@ -7,8 +7,6 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
-# export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
-# export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
 export PATH="$(pyenv root)/shims:${PATH}"
 export PATH="/opt/homebrew/opt/mysql@8.2/bin:$PATH"
 
