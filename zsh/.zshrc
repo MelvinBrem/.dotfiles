@@ -37,13 +37,17 @@ export NODE_ENV=development
 
 source $HOME/.zsh/inc/variables.sh
 source $HOME/.zsh/inc/helpers.sh
-source $HOME/.zsh/inc/lfcd.sh
 source $HOME/.zsh/inc/wpessh.sh
-
-source $HOME/.zsh/lwp/lwpController.sh
 
 source $HOME/.zsh/.zshprompt
 source $HOME/.zsh/.aliases
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# bun completions
+[ -s "/Users/melvinbrem/.bun/_bun" ] && source "/Users/melvinbrem/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

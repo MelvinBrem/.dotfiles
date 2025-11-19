@@ -9,7 +9,8 @@ alias dl="cd ~/Downloads/"
 alias df="cd ~/.dotfiles/"
 alias cdlf="lfcd"
 
-alias code="code ."
+alias code="cursor ."
+alias cursor="cursor ."
 alias open="open ."
 alias nano="sudo nano"
 

@@ -96,5 +96,6 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "workbench.editor.empty.hint": "hidden",
-  "github.copilot.nextEditSuggestions.enabled": true
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden"
 }

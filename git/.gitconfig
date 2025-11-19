@@ -1,9 +1,12 @@
 [credential]
-helper = store
+	helper = store
 [user]
-name = MelvinBrem
-email = melvinbrem@live.com
+	name = MelvinBrem
+	email = melvinbrem@live.com
 [pull]
-rebase = false
+	rebase = false
+	default = upstream
 [int]
-defaultBranch = main
+	defaultBranch = main
+[commit]
+  template = ~/.gitmessage
