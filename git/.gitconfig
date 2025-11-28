@@ -6,7 +6,7 @@
 [pull]
 	rebase = false
 	default = upstream
-[int]
+[init]
 	defaultBranch = main
 [commit]
   template = ~/.gitmessage
